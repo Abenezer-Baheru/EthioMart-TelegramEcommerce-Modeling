@@ -21,12 +21,12 @@ class DataPreprocessor:
         if not isinstance(text, str):
             return text
         return emoji.replace_emoji(text, replace='')
-
+        
     def remove_english_from_amharic(self, text):
         # Check if the input is a string, otherwise return as is
         if isinstance(text, str):
-            # Use regex to remove English letters and common symbols
-            amharic_only_text = re.sub(r'[A-Za-z0-9.,!?:;\'\"() {}\-_/]', '', text)
+            # Use regex to remove English letters and common symbols, but keep spaces
+            amharic_only_text = re.sub(r'[A-Za-z0-9.,!?:;\'\"(){}\-_/]', '', text)
             return amharic_only_text
         return text
 
