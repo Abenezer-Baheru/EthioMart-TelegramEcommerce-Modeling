@@ -1,4 +1,13 @@
 pandas 
 numpy 
 matplotlib 
-scikit-learn 
+scikit-learn
+telethon
+nltk
+spaCy
+emoji
+sentencepiece
+transformers
+amseg
+pdf2image
+pytesseract
