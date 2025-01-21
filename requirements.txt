@@ -11,3 +11,6 @@ transformers
 amseg
 pdf2image
 pytesseract
+datasets 
+accelerate 
+peft
