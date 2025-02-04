@@ -32,7 +32,7 @@ The data is structured as follows:
 - **Data Preprocessing**: Tokenizing, normalizing, and handling Amharic-specific linguistic features.
 - **Entity Labeling**: Labeling entities such as product names, prices, and locations in CoNLL format.
 
-## Task 1: Data Ingestion and Data Preprocessing
+## 1: Data Ingestion and Data Preprocessing
 
 ### Data Ingestion
 
@@ -47,14 +47,14 @@ The collected text data was preprocessed by tokenizing, normalizing, and handlin
 
 The preprocessed data was then structured into a unified format, separating metadata from message content, and stored for further analysis.
 
-## Task 2: Label a Subset of Dataset in CoNLL Format
+## 2: Label a Subset of Dataset in CoNLL Format
 
 A subset of the dataset was labeled in the CoNLL format to identify and label entities such as products, prices, and locations in Amharic text. The labeling process involved:
 - **Token Labeling**: Each token (word) was labeled on its own line, followed by its entity label.
 - **Entity Types**: Entities were labeled as B-Product, I-Product, B-LOC, I-LOC, B-PRICE, I-PRICE, or O (outside any entities).
 - **Saving in CoNLL Format**: The labeled data was saved in a plain text file in the CoNLL format, with blank lines separating individual sentences/messages.
 
-## Task 3: Fine Tune NER Model
+## 3: Fine Tune NER Model
 
 Objective: Fine-tune a Named Entity Recognition (NER) model to extract key entities (e.g., products, prices, and location) from Amharic Telegram messages.
 
@@ -69,7 +69,7 @@ Steps:
 8. Evaluate the fine-tuned model on the validation set.
 9. Save the model for future use.
 
-## Task 4: Model Comparison & Selection
+## 4: Model Comparison & Selection
 
 Compare different models and select the best-performing one for the entity extraction task.
 
@@ -79,7 +79,7 @@ Steps:
 3. Compare models based on accuracy, speed, and robustness.
 4. Select the best-performing model for production.
 
-## Task 5: Model Interpretability
+## 5: Model Interpretability
 
 Use model interpretability tools to explain how the NER model identifies entities, ensuring transparency and trust in the system.
 
